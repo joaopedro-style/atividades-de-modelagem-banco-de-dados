@@ -4,6 +4,6 @@
 
 ![Entidades, atributos e relacionamento](modelagem-conceitual/modelo-conceitual.png)
 
-## Exemplo de Modelagem Lógica
+## Exemplo de Modelagem Lógica.
 
 ![Tables, colunas e relacionamento](modelagem-logica/modelo-logico.png)
