@@ -50,3 +50,5 @@ ALTER TABLE produtos
     FOREIGN KEY (fabricante_id) REFERENCES fabricantes(id);
 ```
 
+
+
