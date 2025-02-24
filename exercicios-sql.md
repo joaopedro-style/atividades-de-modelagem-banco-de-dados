@@ -33,7 +33,7 @@ ALTER TABLE filmes MODIFY COLUMN titulo VARCHAR(200) NOT NULL;
 ```sql
 CREATE TABLE filmes(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    titulo VARCHAR(45) NOT NULL,
+    titulo VARCHAR(200) NOT NULL,
     lancamento DATE NOT NULL,
     genero_id INT NOT NULL
 );
@@ -57,11 +57,11 @@ CREATE TABLE detalhes(
 ```sql
 ALTER TABLE detalhes
     ADD CONSTRAINT fk_detalhe_do_filme
-    FOREIGN KEY (filme_id) REFERENCES genero(id);
+    FOREIGN KEY (filme_id) REFERENCES generos(id);
 ```
 
 ```sql
 ALTER TABLE filmes
     ADD CONSTRAINT fk_filme_genero
-    FOREIGN KEY (genero_id) REFERENCES filme(id);
+    FOREIGN KEY (genero_id) REFERENCES filmes(id);
 ```
