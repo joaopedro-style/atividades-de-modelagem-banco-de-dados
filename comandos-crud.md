@@ -81,7 +81,7 @@ INSERT INTO fabricantes (nome) VALUES('Positivo'),('Microsoft');
 
 ## INSERT (Produtos)
 ```sql
-INSERT INTO produtos(nome, descricao,preco, quantidade, fabricante_id)
+INSERT INTO produtos(nome, descricao, preco, quantidade, fabricante_id)
 VALUES(
     'Xbox Series S',
     'Um video game de velocidade e desempenho de última geração',
