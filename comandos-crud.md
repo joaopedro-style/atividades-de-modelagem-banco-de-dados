@@ -72,3 +72,28 @@ VALUES(
     3  -- Apple
  );
 ```
+# Comandos do exercício 03
+
+## INSERT (Fabricantes)
+```sql
+INSERT INTO fabricantes (nome) VALUES('Positivo'),('Microsoft');
+```
+
+## INSERT (Produtos)
+```sql
+INSERT INTO produtos(nome, descricao,preco, quantidade, fabricante_id)
+VALUES(
+    'Xbox Series S',
+    'Um video game de velocidade e desempenho de última geração',
+    1997.00,
+    5,
+    8
+),
+(
+    'Notebook Motion',
+    'Notbook da intel Dual Core 4GB de RAM, 128GB SSD e Tela 14,1 polegadas',
+    1213.65,
+    8,
+    7
+);
+```
