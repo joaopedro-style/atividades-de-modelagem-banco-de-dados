@@ -56,12 +56,12 @@ CREATE TABLE detalhes(
 
 ```sql
 ALTER TABLE detalhes
-    ADD CONSTRAINT fk_detalhe_do_filme
-    FOREIGN KEY (filme_id) REFERENCES generos(id);
+    ADD CONSTRAINT fk_detalhes_do_filmes
+    FOREIGN KEY (filme_id) REFERENCES filmes(id);
 ```
 
 ```sql
 ALTER TABLE filmes
-    ADD CONSTRAINT fk_filme_genero
-    FOREIGN KEY (genero_id) REFERENCES filmes(id);
+    ADD CONSTRAINT fk_filmes_generos
+    FOREIGN KEY (genero_id) REFERENCES generos(id);
 ```
