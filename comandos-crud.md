@@ -153,3 +153,20 @@ WHERE NOT fabricante_id = 8;
 SELECT nome, descricao, preco FROM produtos
 WHERE fabricante_id !=8;
 ```
+
+---
+
+## UPDATE (Fabricantes)
+
+**☠️ PERIGO! 🚨**
+
+**SEMPRE USE** a cláusula `WHERE` em seu comando `UPDATE` especificando uma ou mais condições para a atualização.
+
+```sql
+UPDATE fabricantes SET nome = 'Asus do Brasil'
+WHERE id = 1;
+
+-- Mini-exerício: Alterar a quantiade para 10 dos produtos que custam abaixo de 2000 exceto da Microsoft.
+UPDATE produtos SET quantidade = 10
+WHERE preco < 2000 AND fabricante_id !=8;
+```
