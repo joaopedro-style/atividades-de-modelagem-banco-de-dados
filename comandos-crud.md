@@ -129,3 +129,15 @@ WHERE fabricante_id = 3;
 SELECT nome, preco FROM produtos
 WHERE preco >= 2000 AND preco <= 6000;
 ```
+
+#### OU (OR)
+
+```sql
+-- Mini-exercício: exibir nome, descricao dos produtos da Apple e da samsung
+SELECT nome, descricao FROM produtos
+WHERE fabricante_id = 3 OR fabricante_id = 5;
+
+-- Versão usando a função SQL IN()
+SELECT nome, descricao FROM produtos
+WHERE fabricante_id IN(3, 5);
+```
