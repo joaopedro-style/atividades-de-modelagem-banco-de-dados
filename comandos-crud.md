@@ -156,7 +156,7 @@ WHERE fabricante_id !=8;
 
 ---
 
-## UPDATE (Fabricantes)
+## UPDATE (Fabricantes e produtos)
 
 **☠️ PERIGO! 🚨**
 
@@ -169,4 +169,19 @@ WHERE id = 1;
 -- Mini-exerício: Alterar a quantiade para 10 dos produtos que custam abaixo de 2000 exceto da Microsoft.
 UPDATE produtos SET quantidade = 10
 WHERE preco < 2000 AND fabricante_id !=8;
+```
+
+---
+
+## DELETE (Fabricantes e Produtos)
+
+**☠️ PERIGO! 🚨**
+
+**SEMPRE USE** a cláusula `WHERE` em seu comando `DELETE` especificando uma ou mais condições para a atualização.
+
+```sql
+DELETE FROM fabricantes WHERE id = 4;
+DELETE FROM fabricantes WHERE id = 1;
+DELETE FROM produtos WHERE id = 4;
+DELETE FROM fabricantes WHERE id = 3;
 ```
