@@ -80,3 +80,9 @@ SELECT sinopse, filme_id FROM detalhes;
 ```sql
 DELETE FROM filmes WHERE id = 3;
 ```
+## Operações e funções de geração
+
+```sql
+SELECT filmes.titulo AS Filme, generos.nome AS Genero FROM filmes JOIN generos ON filmes.genero_id = generos.id;
+
+```
