@@ -61,7 +61,22 @@ VALUES(
 );
 ```
 ## UPDATE
+
 ```sql
 UPDATE filmes SET titulo = 'O Senhor dos Anéis'
 WHERE id = 4;
+```
+
+## SELECT
+
+```sql
+SELECT * FROM filmes;
+SELECT titulo, lancamento FROM filmes;
+SELECT sinopse, filme_id FROM detalhes;
+```
+
+## DELETE
+
+```sql
+DELETE FROM filmes WHERE id = 3;
 ```
