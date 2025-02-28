@@ -85,7 +85,7 @@ DELETE FROM filmes WHERE id = 3;
 ```sql
 SELECT filmes.titulo AS Filme, generos.nome AS Genero FROM filmes JOIN generos ON filmes.genero_id = generos.id;
 
-SELECT filmes.titulo AS Filme, detalhes.sinopse AS Sinopse FROM detalhes JOIN filmes ON detalhes.filme_id = filmes.id;
+SELECT filmes.titulo AS Filme, detalhes.sinopse AS Sinopse FROM filmes JOIN detalhes ON filmes.id = detalhes.filme_id;
 
 SELECT
     filmes.titulo AS Filme,
@@ -93,5 +93,5 @@ SELECT
     detalhes.sinopse As Sinopse
 FROM filmes 
 INNER JOIN generos ON filmes.genero_id = generos.id
-INNER JOIN detalhes ON detalhes.filme_id = filmes.id  
+INNER JOIN detalhes ON filmes.id = detalhes.filme_id;  
 ```
