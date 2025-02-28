@@ -91,7 +91,7 @@ SELECT
     filmes.titulo AS Filme,
     generos.nome AS Genero,
     detalhes.sinopse As Sinopse
-FROM filmes INNER JOIN generos    
-
-
+FROM filmes 
+INNER JOIN generos ON filmes.genero_id = generos.id
+INNER JOIN detalhes ON detalhes.filme_id = filmes.id  
 ```
